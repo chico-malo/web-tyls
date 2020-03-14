@@ -1,0 +1,41 @@
+@import "./common.less";
+.aboutCase_container {
+  .container_case {
+    width: 1000px;
+    margin: 70px auto 30px;
+    .case_item {
+      flex-direction: column;
+      margin: 10px;
+      padding-bottom: 30px;
+      border: 1px solid #333;
+      &:hover {
+        border: 1px solid @third;
+        .item_btn {
+          color: #fff;
+          background-color: rgba(255, 146, 51, 1);
+          border: 1px solid #fff;
+        }
+      }
+      .item_bg {
+        width: 310px;
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+      }
+      .item_title {
+        margin: 20px 0;
+        font-size: 25px;
+        font-weight: 600;
+        color: #333;
+      }
+      .item_btn {
+        display: inline-block;
+        padding: 5px 15px;
+        font-size: 16px;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #333;
+      }
+    }
+  }
+}

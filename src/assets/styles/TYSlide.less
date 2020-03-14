@@ -1,0 +1,39 @@
+// start 首页律所team
+.contener_homeTeam {
+  position: relative;
+  padding: 80px 0 10px;
+  .homeTeam_bgi {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.2;
+  }
+  .item_slide {
+    width: 391px !important;
+    box-shadow: 0 0 35px rgba(10, 10, 10, 0.08);
+    // 图片盒子
+    .slide_img {
+      width: 391px;
+      height: 570px;
+      background-size: cover;
+      background-position: center;
+    }
+    // 团队描述
+    .slide_box_desc {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      .desc_title {
+        &:extend(.title);
+      }
+      .desc {
+        &:extend(.subittle);
+      }
+    }
+  }
+}
+// end  首页律所team

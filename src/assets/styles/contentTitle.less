@@ -1,0 +1,43 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-09-30 11:49:57
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2019-12-30 11:19:58
+ * @Description: 内容的title
+ */
+ @import "./common.less";
+ 
+.container_contentTitle {
+  flex-direction: column;
+  margin: 10px auto 25px;
+  .contentTitle_title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    color: @second;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 120%;
+      height: 1px;
+      width: 150px;
+      background: @second;
+    }
+    &::before {
+      left: -150%;
+    }
+  }
+  .contentTitle_subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+  }
+}

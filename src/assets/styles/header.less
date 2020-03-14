@@ -1,0 +1,55 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-09-29 11:25:42
+ * @LastEditors: yangyao
+ * @LastEditTime: 2020-03-12 18:40:17
+ * @Description: header样式
+ */
+.container_header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 150px;
+  min-width: 1400px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  // 头部公司信息
+  .header_nav {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #06060638;
+    p {
+      margin-right: 50px;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  // logo
+  .header_logo {
+    width: 40px;
+    height: auto;
+  }
+  // name
+  .header_name {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+  // menu
+  .header_menu {
+    display: flex;
+    background: transparent;
+    border: none;
+    .menu_title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      &:hover {
+        color: #c83226;
+      }
+    }
+  }
+}

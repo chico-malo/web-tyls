@@ -1,0 +1,47 @@
+  // start 首页理论成果banner
+  .contaner_home_banner {
+    position: relative;
+    margin: 104px auto 0;
+    width: 1120px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .banner_flow {
+      position: absolute;
+      top: -80px;
+      left: 78px;
+      width: 550px;
+      padding: 25px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      .flow_title {
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .flow_subtitle {
+        margin: 20px 0;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 2px;
+      }
+      .flow_contact {
+        display: inline-block;
+        padding: 20px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: rgba(185, 57, 57, 0.9);
+      }
+    }
+  }
+  // end 首页理论成果banner

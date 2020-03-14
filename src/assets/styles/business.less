@@ -1,0 +1,55 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-09-30 14:20:53
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2020-03-07 21:22:35
+ * @Description: 核心业务组件
+ */
+@import "./common.less";
+
+.container_TYbusiness {
+  margin: 50px auto;
+  .business_core {
+    margin: 10px auto;
+    width: 1140px;
+    .core_item {
+      width: 300px;
+      padding: 80px 30px 0 30px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:hover {
+        background: rgba(200, 168, 117, 1);
+        cursor: pointer;
+        .item_icon,
+        .item_title,
+        .item_desc {
+          color: #fff;
+        }
+      }
+      .item_icon {
+        font-size: 40px;
+        color: @second;
+      }
+      .item_title {
+        margin-bottom: 5px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        text-transform: none;
+        color: #161616;
+      }
+      .item_desc {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #a8a8a8;
+      }
+    }
+  }
+}

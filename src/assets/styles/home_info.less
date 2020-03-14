@@ -1,0 +1,50 @@
+/*
+ * @Author: yangyao
+ * @Date: 2020-03-07 21:12:32
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2020-03-07 23:30:04
+ * @Description: 从首页拆分出来的 拓原之声
+ */
+// start 首页拓原之声
+.container_homeInfo {
+  width: 100%;
+  min-width: 1140px;
+  margin-top: 30px;
+  padding: 20px 100px;
+  .homeInfo_list {
+    .list_item {
+      margin: 20px 0;
+      width: 33.33%;
+      height: 205px;
+      flex-direction: column;
+      // 文章标题
+      .item_title {
+        padding-left: 10px;
+        width: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 18px;
+        background: #c83226;
+        color: #fff;
+        border-radius: 4px;
+      }
+      // 文章描述
+      .item_desc {
+        width: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 5px;
+        border-bottom: 1px solid #ececec;
+        color: #333;
+        cursor: pointer;
+        &:hover {
+          background-color: #d0d0d0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// end 首页拓原之声

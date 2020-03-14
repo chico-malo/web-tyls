@@ -1,0 +1,51 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-10-12 11:42:06
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2020-03-08 16:48:00
+ * @Description: 拓原之声 样式
+ */
+.container_info {
+  // 拓原之神 内容容器
+  .info_content {
+    width: 1140px;
+    margin: 40px auto;
+    // 列表item容器
+    .item_box {
+      margin-top: 50px;
+      min-width: 1440px;
+      cursor: pointer;
+      .item_img {
+        width: 330px;
+        height: 150px;
+        border: 1px solid #eaeaea;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      // 内容容器
+      .item_box_info {
+        margin-left: 40px;
+        width: 800px;
+        .info_title {
+          font-size: 18px;
+          color: #666;
+          line-height: 46px;
+          font-weight: bold;
+        }
+        // 文章简介
+        .info_desc {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          word-break: break-all;
+          font-size: 14px;
+          height: 44px;
+          overflow: hidden;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

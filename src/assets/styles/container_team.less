@@ -1,0 +1,76 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-10-10 19:13:44
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2019-12-31 19:05:54
+ * @Description: 拓原团队 模块样式
+ */
+@import "./common.less";
+
+.container_team {
+  padding-bottom: 40px;
+  background: rgba(220, 220, 220, 0.3);
+  .team_content {
+    padding: 40px 60px;
+    margin: 0px auto;
+    max-width: 1140px;
+    min-width: 1140px;
+    background: #fff;
+    // 每一个律师介绍的item
+    .item_box {
+      margin: 40px 0;
+      padding: 25px 0;
+      width: 510px;
+      border-bottom: 1px solid #33333317;
+      &:hover {
+        .info_btn_home {
+          border: 1px solid #fff !important;
+          background-color: rgb(255, 146, 51, 1);
+          color: #fff !important;
+        }
+      }
+      .item_img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+      // 信息盒子
+      .item_info {
+        padding-top: 20px;
+        margin-left: 30px;
+        // 名称
+        .info_title {
+          &:extend(.title);
+          margin: 0;
+          font-size: 28px;
+          color: #333;
+          font-family: sans-serif;
+        }
+        // 职位
+        .info_subtitle {
+          &:extend(.title);
+          padding-top: 10px;
+          color: #424242;
+          font-size: 20px;
+          font-weight: normal;
+        }
+        // 描述
+        .info_desc {
+          color: #757575;
+        }
+        // 查看主页
+        .info_btn_home {
+          display: inline-block;
+          margin-top: 30px;
+          padding: 10px 15px;
+          font-size: 16px;
+          color: #333;
+          border: 1px solid #333;
+        }
+      }
+    }
+  }
+}

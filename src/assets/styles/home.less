@@ -1,0 +1,180 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-09-29 11:51:02
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2020-03-07 23:43:49
+ * @Description: home
+ */
+@import "./common.less";
+
+.home_container {
+  // start 头部组合
+  .container_group {
+    position: relative;
+    height: 100vh;
+    .group_carousel_pre,
+    .group_carousel_next {
+      position: absolute;
+      top: 50%;
+      border-radius: 0;
+      border: 1px solid #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      &:hover {
+        background-color: @second;
+      }
+    }
+    .group_carousel_pre {
+      z-index: 1;
+      left: 15px;
+    }
+    .group_carousel_next {
+      right: 15px;
+    }
+    // 幻灯片
+    .group_carousel_box {
+      position: relative;
+      width: 100%;
+      min-width: 1140px;
+      .group_carousel {
+        height: 845px;
+      }
+    }
+  }
+
+  // start 幻灯片
+  .carousel_item {
+    position: relative;
+    height: 100vh;
+    .item_background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    // 第一张图的样式
+    .item_first {
+      position: relative;
+      flex-direction: column;
+      height: 70%;
+      margin-left: 100px;
+      .first_title {
+        font-size: 18px;
+        color: #fff;
+        text-shadow: 0 0 1px #333;
+      }
+      .first_desc {
+        margin-top: 25px;
+        font-size: 72px;
+        font-weight: 400;
+        color: #fff;
+        text-shadow: 0 0 1px #333;
+      }
+    }
+  }
+  // end 幻灯片
+
+  // start 首页的关于我们介绍
+  .conatiner_home_about {
+    position: relative;
+    margin: 50px auto;
+    width: 1120px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    .about_right {
+      position: absolute;
+      padding: 40px;
+      width: 50%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      .right_title,
+      .right_subtitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "微软雅黑";
+        color: #ffffff;
+      }
+      .right_subtitle {
+        font-size: 30px;
+      }
+      .right_desc {
+        opacity: 0.9;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #ffffff;
+      }
+    }
+  }
+  // end 首页的关于我们介绍
+
+  // start 首页律所环境
+  .contaner_home_environment {
+    margin-top: 50px;
+    .environment_core {
+      max-width: 1140px;
+      margin: 0 auto;
+      // 律所item
+      .core_item {
+        position: relative;
+        width: 360px;
+        margin: 0 10px;
+        height: 360px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        // start 律所item 浮动描述
+        .item_flow {
+          position: absolute;
+          bottom: 24px;
+          left: 30px;
+          right: 30px;
+          padding: 20px;
+          text-align: center;
+          background: #fff;
+          .flow_title {
+            &:extend(.title);
+          }
+          .flow_desc {
+            &:extend(.subittle);
+          }
+        }
+        // end 律所item 浮动描述
+      }
+    }
+  }
+  // end 首页律所环境
+
+  // start 首页地址
+  .container_address {
+    margin-top: 70px;
+    min-width: 1140px;
+    height: 399px;
+    overflow: hidden;
+    .address_map {
+      width: 70%;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .address_info {
+      flex-direction: column;
+      width: 30%;
+      padding: 30px;
+      background-color: #212121;
+      p {
+        &:extend(.subittle);
+        margin: 8px 0;
+        color: #fff;
+      }
+    }
+  }
+  // end 首页地址
+}

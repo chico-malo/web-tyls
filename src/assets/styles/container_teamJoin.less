@@ -1,0 +1,63 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-10-10 20:03:53
+ * @LastEditors: yangyao
+ * @LastEditTime: 2020-02-28 17:20:52
+ * @Description: 招贤纳士模块样式
+ */
+.container_teamJoin {
+  padding-bottom: 40px;
+  background-color: rgba(220, 220, 220, 0.3);
+  .teamJoin_header_bgm {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+  // 内容容器
+  .teamJoin_content {
+    position: relative;
+    margin: -70px auto 0;
+    width: 1400px;
+    // 左边盒子
+    .content_left {
+      padding: 20px 40px;
+      width: 65%;
+      background-color: #fff;
+      .item_box {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(236, 236, 236, 1);
+        .item_title {
+          font-size: 26px;
+          color: #222831;
+        }
+        .item_subtitle {
+          margin: 10px 0;
+          font-size: 16px;
+          color: #222831;
+        }
+        .item_info {
+          .info_item {
+            width: 33%;
+          }
+        }
+      }
+    }
+    // 右边盒子
+    .content_right {
+      flex-direction: column;
+      margin-left: 5%;
+      padding: 20px 0;
+      width: 25%;
+      background-color: #fff;
+      .right_qrCode {
+        width: 140px;
+        height: 140px;
+      }
+      .right_desc {
+        font-size: 14px;
+        color: #000;
+      }
+    }
+  }
+}

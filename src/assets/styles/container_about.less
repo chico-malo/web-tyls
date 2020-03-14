@@ -1,0 +1,96 @@
+/*
+ * @Author: yangyao
+ * @Date: 2019-10-10 21:01:32
+ * @LastEditors  : yangyao
+ * @LastEditTime : 2019-12-30 22:20:09
+ * @Description: 关于我们模块 样式
+ */
+.container_about {
+  // 内容容器
+  .about_content {
+    margin: 40px auto;
+    width: 1200px;
+    // 引导语
+    .content_guide {
+      .guide_title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        color: #333333;
+      }
+      .guide_desc {
+        margin-top: 20px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        text-indent: 30px;
+        font-size: 16px;
+        color: #333333;
+      }
+    }
+    // 寄语
+    .content_manifesto {
+      margin-top: 80px;
+      .manifesto_img {
+        padding: 20px;
+        width: 360px;
+        height: 420px;
+        background-color: #e4e4e4;
+      }
+      // 寄语信息
+      .manifesto_info {
+        padding: 20px;
+        padding-left: 70px;
+        width: 700px;
+        .info_title {
+          font-size: 26px;
+          font-weight: bold;
+          color: #333333;
+          text-align: center;
+        }
+        .info_desc {
+          margin: 10px 0;
+          line-height: 35px;
+          text-indent: 30px;
+          font-size: 16px;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+.container_about_idea {
+  height: 306px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000bf;
+  }
+  .idea_item {
+    z-index: 1;
+    flex-direction: column;
+    color: #fff;
+    .item_icon {
+      font-size: 40px;
+      color: #b1a17d;
+    }
+    .item_title {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+    .item_subtitle {
+      font-size: 14px;
+    }
+  }
+}
+
+// 关于我们历程
+.container_about_course {
+  margin-top: 180px;
+}
