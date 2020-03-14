@@ -2,7 +2,7 @@
  * @Author: yangyao
  * @Date: 2019-09-16 09:09:20
  * @LastEditors  : yangyao
- * @LastEditTime : 2020-03-14 22:35:52
+ * @LastEditTime : 2020-03-14 22:47:52
  * @Description: 文件描述
  -->
 # pc-tyls-enterprise
@@ -16,10 +16,6 @@ tyls 企业官网
 软件架构说明
 
 #### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
 
 #### 使用说明
 
