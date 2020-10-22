@@ -35724,10 +35724,15 @@ p {
   color: #fff;
 }
 .contaner_footer .footer_copyright {
-  padding: 50px 0;
-  height: 50px;
+  flex-direction: column;
+  height: 90px;
   color: #888;
   background-color: #2b2c2e;
+}
+.contaner_footer .footer_copyright .beian_logo {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
 }
 
 /*
